@@ -43,8 +43,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.3s;
-    transition: color 0.3s;
+    transition: background 0.12;
+    transition: color 0.12s;
     gap: .6rem;
     svg {
         width: 2rem;

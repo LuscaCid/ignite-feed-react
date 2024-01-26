@@ -1,0 +1,41 @@
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.userImg{
+    width: 5rem;
+    height: 5rem;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+.userDisplayNames{
+    display: flex;
+    flex-direction: column;
+
+}
+article{
+    background: var(--gray-800);
+    padding: 2rem;
+    border-radius: .8rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}
+.username{
+
+}
+
+.userStack{
+
+}
+.timePosted{
+
+}

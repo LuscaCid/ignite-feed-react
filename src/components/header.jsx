@@ -4,9 +4,6 @@ export const Header = () => {
     return (
         <header className={styles.header}>
             <img src={igniteLogo} alt="logo ignite" />
-            <strong >
-                Ignite Feed
-            </strong>
         </header>
         
     )
