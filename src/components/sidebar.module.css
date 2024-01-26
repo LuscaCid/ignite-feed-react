@@ -16,11 +16,12 @@
     margin-top: 1rem;
 }
 .profile strong {
-    color: var(--gray-600);
+    color: var(--gray-300);
     line-height: 2rem;
 }
 .profile span {
     font-size: 1.4rem;
+    color: var(--gray-400);
 }
 .footer {
     display: flex;
@@ -43,12 +44,17 @@
     align-items: center;
     justify-content: center;
     transition: background 0.3s;
-    
+    transition: color 0.3s;
+    gap: .6rem;
+    svg {
+        width: 2rem;
+    }
+    &:hover{
+        background: var(--green-500);
+        color: white;
+    }
 }
-.footer a :hover{
-    background: var(--green-500);
-    
-}
+
 .profilePhoto {
     width: 8rem;
     height: 8rem;
