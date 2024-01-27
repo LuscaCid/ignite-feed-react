@@ -1,0 +1,19 @@
+.user {
+  img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.container{
+  display: flex;
+  gap: 2rem;
+  img { 
+    width: 5rem;
+    height: 5rem;
+    border-radius: .7rem;
+  }
+
+}
