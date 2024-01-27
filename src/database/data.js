@@ -26,7 +26,7 @@ export const fakePosts = [
   {
     title: "Segundo post da página",
     description: "Segundo post da página com mais informações",
-    userImgUrl: "https://github.com/anotheruser.png",
+    userImgUrl: "https://github.com/joao.png",
     username: "Outro Usuário",
     role: "Backend Developer",
     comments: [
@@ -45,7 +45,7 @@ export const fakePosts = [
   {
     title: "Terceiro post da página",
     description: "Terceiro post da página com novas informações",
-    userImgUrl: "https://github.com/anotheruser2.png",
+    userImgUrl: "https://github.com/pietro.png",
     username: "Mais um Usuário",
     role: "Full Stack Developer",
     comments: [
@@ -64,7 +64,7 @@ export const fakePosts = [
   {
     title: "Quarto post da página",
     description: "Quarto post da página com diferentes detalhes",
-    userImgUrl: "https://github.com/anotheruser3.png",
+    userImgUrl: "https://github.com/gustavo.png",
     username: "Usuário Final",
     role: "UX Designer",
     comments: [

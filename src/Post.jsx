@@ -20,9 +20,9 @@ import { IoIosSend } from "react-icons/io";
 import { useState } from 'react'
 import { Comment } from "./components/Comment";
 import styles from './post.module.css'
-export const Post = ({children, title, description, commentsArray}) => {
+export const Post = ({ role,username, userImgUrl, title, description, comments}) => {
     const [commentText, setCommentText]= useState('')
-
+    
     function handleSendMessage(e){
 
     }
@@ -32,22 +32,20 @@ export const Post = ({children, title, description, commentsArray}) => {
             <header>
                  <div className={styles.userInfo}>            
                     <img 
-                        src="https://github.com/luscacid.png" 
+                        src={userImgUrl} 
                         className={styles.userImg}
                     />
                     <div className={styles.userDisplayNames}>
-                        <strong className={styles.username}> Lucas Cid </strong>
-                        <span className={styles.userStack}> web developer </span>
+                        <strong className={styles.username}> {username} </strong>
+                        <span className={styles.userStack}> {role} </span>
                     </div>
                 </div>  
                 <time dateTime = '2022-05-12'>Publicado ha 1h</time>  
             </header>
            
            <main className={styles.main}>
-                <h2>minha primeira aventura</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores dolore nostrum quo hic ipsam commodi laudantium, ipsa, necessitatibus perspiciatis accusantium a nobis quas recusandae neque atque dolorum rem aliquid aperiam.
-                </p>
+                <h2>{title}</h2>
+                <p>{description}</p>
                 
            </main>
             <label htmlFor="commentInput">Deixe seu feedback</label>
@@ -62,7 +60,19 @@ export const Post = ({children, title, description, commentsArray}) => {
                     <IoIosSend size={20}/>
                 </button>  
             </form>
-            
+            <section>
+                Comments
+            </section>
+            {comments.length > 0 ? comments.map((comment, index) => {
+                return (
+                    <Comment 
+                        key={String(index)} 
+                        username={comment.userCommentName}
+                        imgUrl={comment.userCommentImgUrl}
+                        commentText={comment.content}
+                    />
+                )
+            }) : (<div className={styles.firstComment}>Seja o primeiro a comentar</div>)}
        </article>
     )
 }

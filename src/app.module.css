@@ -7,3 +7,6 @@
     align-items: flex-start;
     gap: 2rem;
 }
+.empty {
+    color: var(--gray-500);
+}

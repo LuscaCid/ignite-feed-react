@@ -15,7 +15,7 @@ export const AppContext = createContext([])
 export const FeedContext = (props) => {
   const [posts, setPosts] = useState([])
   useEffect(() => {
-    setPosts(prevState => [...prevState, fakePosts])
+    setPosts(fakePosts)
   },[])
 
   return (
@@ -26,7 +26,7 @@ export const FeedContext = (props) => {
 }
 export const useAppContext = () => {
   const context = useContext(AppContext)
-  return context
+  return context //it consumes the context of app 
 }
 
 //abracar a aplicacao com esse context
