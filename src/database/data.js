@@ -1,123 +1,84 @@
-export default baseDeDados = [
+export const fakePosts = [
   {
-    usuario: "Joao123",
-    comentario: "Ótima postagem! Gostei muito.",
-    likes: 15,
-    urlFotoPerfil: "https://example.com/joao123.jpg"
+    title: "Primeiro post da página",
+    description: "Primeiro post da página feito pelo adm",
+    userImgUrl: "https://github.com/acato21.png",
+    username: "Igor Gabriel",
+    role: "Frontend Developer",
+    comments: [
+      {
+        content: "Conteúdo do comentário de Lucas",
+        userCommentName: "Lucas Cid",
+        userCommentImgUrl: "https://github.com/luscacid.png"
+      },
+      {
+        content: "Conteúdo do comentário de Anderson",
+        userCommentName: "Anderson Lima",
+        userCommentImgUrl: "https://github.com/anderson.png"
+      },
+      {
+        content: "Conteúdo do comentário de Pedro",
+        userCommentName: "Pedro José",
+        userCommentImgUrl: "https://github.com/pedro.png"
+      },
+    ]
   },
   {
-    usuario: "Maria456",
-    comentario: "Parabéns pelo conteúdo!",
-    likes: 20,
-    urlFotoPerfil: "https://example.com/maria456.jpg"
+    title: "Segundo post da página",
+    description: "Segundo post da página com mais informações",
+    userImgUrl: "https://github.com/anotheruser.png",
+    username: "Outro Usuário",
+    role: "Backend Developer",
+    comments: [
+      {
+        content: "Conteúdo do comentário de Maria",
+        userCommentName: "Maria Silva",
+        userCommentImgUrl: "https://github.com/maria.png"
+      },
+      {
+        content: "Conteúdo do comentário de João",
+        userCommentName: "João Oliveira",
+        userCommentImgUrl: "https://github.com/joao.png"
+      },
+    ]
   },
   {
-    usuario: "Carlos789",
-    comentario: "Interessante, mas poderia abordar mais sobre o tema X.",
-    likes: 8,
-    urlFotoPerfil: "https://example.com/carlos789.jpg"
+    title: "Terceiro post da página",
+    description: "Terceiro post da página com novas informações",
+    userImgUrl: "https://github.com/anotheruser2.png",
+    username: "Mais um Usuário",
+    role: "Full Stack Developer",
+    comments: [
+      {
+        content: "Conteúdo do comentário de Ana",
+        userCommentName: "Ana Santos",
+        userCommentImgUrl: "https://github.com/ana.png"
+      },
+      {
+        content: "Conteúdo do comentário de José",
+        userCommentName: "José Oliveira",
+        userCommentImgUrl: "https://github.com/jose.png"
+      },
+    ]
   },
   {
-    usuario: "Ana567",
-    comentario: "Muito informativo!",
-    likes: 12,
-    urlFotoPerfil: "https://example.com/ana567.jpg"
-  },
-  {
-    usuario: "Pedro890",
-    comentario: "Gostaria de ver mais posts assim!",
-    likes: 18,
-    urlFotoPerfil: "https://example.com/pedro890.jpg"
+    title: "Quarto post da página",
+    description: "Quarto post da página com diferentes detalhes",
+    userImgUrl: "https://github.com/anotheruser3.png",
+    username: "Usuário Final",
+    role: "UX Designer",
+    comments: [
+      {
+        content: "Conteúdo do comentário de Carolina",
+        userCommentName: "Carolina Silva",
+        userCommentImgUrl: "https://github.com/carolina.png"
+      },
+      {
+        content: "Conteúdo do comentário de Ricardo",
+        userCommentName: "Ricardo Oliveira",
+        userCommentImgUrl: "https://github.com/ricardo.png"
+      },
+    ]
   },
   // Adicione mais objetos conforme necessário
-  {
-    usuario: "Usuario6",
-    comentario: "Comentário 6",
-    likes: 25,
-    urlFotoPerfil: "https://example.com/usuario6.jpg"
-  },
-  {
-    usuario: "Usuario7",
-    comentario: "Comentário 7",
-    likes: 10,
-    urlFotoPerfil: "https://example.com/usuario7.jpg"
-  },
-  {
-    usuario: "Usuario8",
-    comentario: "Comentário 8",
-    likes: 14,
-    urlFotoPerfil: "https://example.com/usuario8.jpg"
-  },
-  {
-    usuario: "Usuario9",
-    comentario: "Comentário 9",
-    likes: 22,
-    urlFotoPerfil: "https://example.com/usuario9.jpg"
-  },
-  {
-    usuario: "Usuario10",
-    comentario: "Comentário 10",
-    likes: 30,
-    urlFotoPerfil: "https://example.com/usuario10.jpg"
-  },
-  {
-    usuario: "Usuario11",
-    comentario: "Comentário 11",
-    likes: 8,
-    urlFotoPerfil: "https://example.com/usuario11.jpg"
-  },
-  {
-    usuario: "Usuario12",
-    comentario: "Comentário 12",
-    likes: 19,
-    urlFotoPerfil: "https://example.com/usuario12.jpg"
-  },
-  {
-    usuario: "Usuario13",
-    comentario: "Comentário 13",
-    likes: 16,
-    urlFotoPerfil: "https://example.com/usuario13.jpg"
-  },
-  {
-    usuario: "Usuario14",
-    comentario: "Comentário 14",
-    likes: 11,
-    urlFotoPerfil: "https://example.com/usuario14.jpg"
-  },
-  {
-    usuario: "Usuario15",
-    comentario: "Comentário 15",
-    likes: 27,
-    urlFotoPerfil: "https://example.com/usuario15.jpg"
-  },
-  {
-    usuario: "Usuario16",
-    comentario: "Comentário 16",
-    likes: 23,
-    urlFotoPerfil: "https://example.com/usuario16.jpg"
-  },
-  {
-    usuario: "Usuario17",
-    comentario: "Comentário 17",
-    likes: 9,
-    urlFotoPerfil: "https://example.com/usuario17.jpg"
-  },
-  {
-    usuario: "Usuario18",
-    comentario: "Comentário 18",
-    likes: 13,
-    urlFotoPerfil: "https://example.com/usuario18.jpg"
-  },
-  {
-    usuario: "Usuario19",
-    comentario: "Comentário 19",
-    likes: 21,
-    urlFotoPerfil: "https://example.com/usuario19.jpg"
-  },
-  {
-    usuario: "Usuario20",
-    comentario: "Comentário 20",
-    likes: 17,
-    urlFotoPerfil: "https://example.com/usuario20.jpg"
-  }
 ];

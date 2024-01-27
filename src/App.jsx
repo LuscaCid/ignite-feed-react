@@ -4,9 +4,12 @@ import { Header } from "./components/header"
 import './global.css'
 import { Sidebar } from "./components/Sidebar"
 import styles from './app.module.css'
-
+import {useAppContext} from './hook/feedContext' 
+import { useContext } from "react"
 function App() {
- 
+  const data = useAppContext()
+  //my data is posts that main user follows
+  console.log(data)
   return (
     <>
     <Header/>
