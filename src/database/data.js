@@ -4,6 +4,7 @@ export const fakePosts = [
     description: "Primeiro post da página feito pelo adm",
     userImgUrl: "https://github.com/acato21.png",
     username: "Igor Gabriel",
+    
     role: "Frontend Developer",
     comments: [
       {
@@ -31,6 +32,7 @@ export const fakePosts = [
     description: "Segundo post da página com mais informações",
     userImgUrl: "https://github.com/joao.png",
     username: "Outro Usuário",
+    
     role: "Backend Developer",
     comments: [
       {
@@ -52,6 +54,7 @@ export const fakePosts = [
     description: "Terceiro post da página com novas informações",
     userImgUrl: "https://github.com/pietro.png",
     username: "Mais um Usuário",
+    
     role: "Full Stack Developer",
     comments: [
       {
@@ -74,6 +77,7 @@ export const fakePosts = [
     userImgUrl: "https://github.com/gustavo.png",
     username: "Usuário Final",
     role: "UX Designer",
+    
     comments: [
       {
         content: "Conteúdo do comentário de Carolina",

@@ -19,6 +19,7 @@
 import { IoIosSend } from "react-icons/io";
 import { useState } from 'react'
 import { Comment } from "./components/Comment";
+import {format, formatDistanceToNow} from 'date-fns'
 import styles from './post.module.css'
 export const Post = ({ role,username, userImgUrl, title, description, comments}) => {
     const [commentText, setCommentText]= useState('')
@@ -26,7 +27,6 @@ export const Post = ({ role,username, userImgUrl, title, description, comments})
     function handleSendMessage(e){
 
     }
-
     return (
        <article className={styles.article}>
             <header>
