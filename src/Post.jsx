@@ -17,16 +17,19 @@
 //eu poderia receber um array de objetos com os comments os perfis das pessoas
 //que comentaram, como nome e o url da imagem de avatar no objeto pra renderizar
 import { IoIosSend } from "react-icons/io";
-import { useState } from 'react'
 import { Comment } from "./components/Comment";
 import {format, formatDistanceToNow} from 'date-fns'
+import ptBR from 'date-fns/locale/pt-BR'
 import styles from './post.module.css'
-export const Post = ({ role,username, userImgUrl, title, description, comments}) => {
-    const [commentText, setCommentText]= useState('')
-    
-    function handleSendMessage(e){
-
-    }
+export const Post = ({ role,username, userImgUrl, title, description, comments, publishedAt}) => {
+    //12:19
+    const formattedPublishedAt = format(publishedAt, "d 'de' LLLL 'às' HH:MM'h'", {
+        locale : ptBR
+    })   
+    const relativeDateFormattedFromNow = formatDistanceToNow(publishedAt, {
+        addSuffix :true,
+        locale: ptBR
+    }) 
     return (
        <article className={styles.article}>
             <header>
@@ -40,7 +43,9 @@ export const Post = ({ role,username, userImgUrl, title, description, comments})
                         <span className={styles.userStack}> {role} </span>
                     </div>
                 </div>  
-                <time dateTime = '2022-05-12'>Publicado ha 1h</time>  
+                <time 
+                title={formattedPublishedAt}
+                dateTime = '2022-05-12'>{relativeDateFormattedFromNow}</time>  
             </header>
            
            <main className={styles.main}>

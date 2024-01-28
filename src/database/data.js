@@ -4,7 +4,7 @@ export const fakePosts = [
     description: "Primeiro post da página feito pelo adm",
     userImgUrl: "https://github.com/acato21.png",
     username: "Igor Gabriel",
-    
+    publishedAt : new Date("2024-01-23 10:00:00"),
     role: "Frontend Developer",
     comments: [
       {
@@ -32,7 +32,7 @@ export const fakePosts = [
     description: "Segundo post da página com mais informações",
     userImgUrl: "https://github.com/joao.png",
     username: "Outro Usuário",
-    
+    publishedAt : new Date("2024-01-20 20:00:00"),
     role: "Backend Developer",
     comments: [
       {
@@ -54,7 +54,7 @@ export const fakePosts = [
     description: "Terceiro post da página com novas informações",
     userImgUrl: "https://github.com/pietro.png",
     username: "Mais um Usuário",
-    
+    publishedAt : new Date("2023-12-20 20:00:00"),
     role: "Full Stack Developer",
     comments: [
       {
@@ -77,7 +77,7 @@ export const fakePosts = [
     userImgUrl: "https://github.com/gustavo.png",
     username: "Usuário Final",
     role: "UX Designer",
-    
+    publishedAt : new Date("2024-01-23 13:00:00"),
     comments: [
       {
         content: "Conteúdo do comentário de Carolina",

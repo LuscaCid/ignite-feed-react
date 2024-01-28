@@ -1,15 +1,14 @@
 import { Post } from "./Post"
-import { Button } from "./Button"
 import { Header } from "./components/header"
 import './global.css'
 import { Sidebar } from "./components/Sidebar"
 import styles from './app.module.css'
 import {useAppContext} from './hook/feedContext' 
-import { useContext } from "react"
+
 function App() {
   const data = useAppContext()
   //my data is posts that main user follows
-  console.log(data)
+
   return (
     <>
     <Header/>
@@ -26,12 +25,10 @@ function App() {
                   role={post.role}
                   userImgUrl={post.userImgUrl}
                   comments={post.comments}
-                  
+                  publishedAt = {post.publishedAt}
                 /> 
               )
-
-
-            }) : (<div className={styles.empty}>siga alguem para ver posts</div>)}
+            }) : (<div className={styles.empty}>Siga alguém para ver posts</div>)}
           </main>
       </div>
     </>
