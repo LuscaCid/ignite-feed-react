@@ -4,14 +4,15 @@ import './global.css'
 import { Sidebar } from "./components/Sidebar"
 import styles from './app.module.css'
 import {useAppContext} from './hook/feedContext' 
-
+import { Suspense } from "react"
 function App() {
   const data = useAppContext()
   //my data is posts that main user follows
 
   return (
     <>
-    <Header/>
+    <Suspense fallback = <>loading</>>
+      <Header/>
         <div className={styles.wrapper}>
           <Sidebar />
           <main>
@@ -31,6 +32,8 @@ function App() {
             }) : (<div className={styles.empty}>Siga alguém para ver posts</div>)}
           </main>
       </div>
+    </Suspense>
+    
     </>
   )
 }

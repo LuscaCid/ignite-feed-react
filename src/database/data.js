@@ -8,18 +8,21 @@ export const fakePosts = [
     role: "Frontend Developer",
     comments: [
       {
+        id : Math.round(Math.random() * 5000),
         content: "Conteúdo do comentário de Lucas",
         userCommentName: "Lucas Cid",
         likes : Math.round(Math.random()*3000),
         userCommentImgUrl: "https://github.com/luscacid.png"
       },
       {
+        id : Math.round(Math.random() * 5000),
         content: "Conteúdo do comentário de Anderson",
         userCommentName: "Anderson Lima",
         likes : Math.round(Math.random()*3000),
         userCommentImgUrl: "https://github.com/anderson.png"
       },
       {
+        id : Math.round(Math.random() * 5000),
         content: "Conteúdo do comentário de Pedro",
         userCommentName: "Pedro José",
         likes : Math.round(Math.random()*3000),
@@ -36,12 +39,14 @@ export const fakePosts = [
     role: "Backend Developer",
     comments: [
       {
+        id : Math.round(Math.random() * 5000),
         content: "Conteúdo do comentário de Maria",
         userCommentName: "Maria Silva",
         likes : Math.round(Math.random()*3000),
         userCommentImgUrl: "https://github.com/maria.png"
       },
       {
+        id : Math.round(Math.random() * 5000),
         content: "Conteúdo do comentário de João",
         userCommentName: "João Oliveira",
         likes : Math.round(Math.random()*3000),
@@ -58,12 +63,14 @@ export const fakePosts = [
     role: "Full Stack Developer",
     comments: [
       {
+        id : Math.round(Math.random() * 5000),
         content: "Conteúdo do comentário de Ana",
         userCommentName: "Ana Santos",
         likes : Math.round(Math.random()*3000),
         userCommentImgUrl: "https://github.com/ana.png"
       },
       {
+        id : Math.round(Math.random() * 5000),
         content: "Conteúdo do comentário de José",
         userCommentName: "José Oliveira",
         likes : Math.round(Math.random()*3000),
@@ -80,12 +87,14 @@ export const fakePosts = [
     publishedAt : new Date("2024-01-23 13:00:00"),
     comments: [
       {
+        id : Math.round(Math.random() * 5000),
         content: "Conteúdo do comentário de Carolina",
         userCommentName: "Carolina Silva",
         likes : Math.round(Math.random()*3000),
         userCommentImgUrl: "https://github.com/carolina.png"
       },
       {
+        id : Math.round(Math.random() * 5000),
         content: "Conteúdo do comentário de Ricardo",
         userCommentName: "Ricardo Oliveira",
         likes : Math.round(Math.random()*3000),

@@ -24,6 +24,9 @@
 
     }
   }
+  button:focus{
+    outline: var(--red-500);
+  }
 }
 
 .container{
@@ -53,6 +56,7 @@
   button:hover {
     color: var(--green-500);
   }
+ 
 }
 .commentArea{
   padding: .9rem 1rem 1.5rem;
