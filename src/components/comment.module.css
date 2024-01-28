@@ -8,15 +8,21 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  >button {
+  button {
     margin-top: -.5rem;
     background: none;
     border-radius: .5rem;
     line-height: 0 ;
-    transition: color 0.2s;
+    svg {
+      transition: color 0.2s;
+
+    }
   }
-  >button:hover {
-    color: var(--red-500 );
+  button:hover {
+    svg {
+      color: var(--red-500 );
+
+    }
   }
 }
 

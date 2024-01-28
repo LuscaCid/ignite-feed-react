@@ -26,7 +26,7 @@ function App() {
                   role={post.role}
                   userImgUrl={post.userImgUrl}
                   comments={post.comments}
-                
+                  
                 /> 
               )
 

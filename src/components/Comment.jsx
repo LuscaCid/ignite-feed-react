@@ -20,7 +20,7 @@ export function Comment ({username, commentText, imgUrl, countLikes}) {
           <button onClick = {() => console.log('clicou no like')}>
             <AiTwotoneLike size={20}  />
             Aplaudir
-            <span className={styles.likes}>20</span>
+            <span className={styles.likes}>{countLikes > 0 ? countLikes : 0}</span>
           </button>
         </span>
       </div>

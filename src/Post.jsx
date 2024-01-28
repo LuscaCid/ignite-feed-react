@@ -70,6 +70,7 @@ export const Post = ({ role,username, userImgUrl, title, description, comments})
                         username={comment.userCommentName}
                         imgUrl={comment.userCommentImgUrl}
                         commentText={comment.content}
+                        countLikes={ comment.likes}
                     />
                 )
             }) : (<div className={styles.firstComment}>Seja o primeiro a comentar</div>)}
