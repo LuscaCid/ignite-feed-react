@@ -17,7 +17,7 @@ export const Sidebar = () => {
             <div className={styles.profile}>
                 <img 
                 className={styles.profilePhoto}
-                src="https:github.com/luscacid.png" />
+                src="https://github.com/luscacid.png" />
                 <strong>
                     Lucas Cid
                 </strong>
