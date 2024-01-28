@@ -2,10 +2,10 @@ export const fakePosts = [
   {
     title: "Primeiro post da página",
     description: "Primeiro post da página feito pelo adm",
-    userImgUrl: "https://github.com/acato21.png",
-    username: "Igor Gabriel",
+    userImgUrl: "https://github.com/luscacid.png",
+    username: "Lucas Cid",
     publishedAt : new Date("2024-01-23 10:00:00"),
-    role: "Frontend Developer",
+    role: "Web Developer",
     comments: [
       {
         id : Math.round(Math.random() * 5000),
@@ -16,17 +16,17 @@ export const fakePosts = [
       },
       {
         id : Math.round(Math.random() * 5000),
-        content: "Conteúdo do comentário de Anderson",
+        content: "Esse programador eh brabo dms",
         userCommentName: "Anderson Lima",
         likes : Math.round(Math.random()*3000),
         userCommentImgUrl: "https://github.com/anderson.png"
       },
       {
         id : Math.round(Math.random() * 5000),
-        content: "Conteúdo do comentário de Pedro",
-        userCommentName: "Pedro José",
+        content: "Também gosto muito dele, vei!!!",
+        userCommentName: "Igor Gabriel",
         likes : Math.round(Math.random()*3000),
-        userCommentImgUrl: "https://github.com/pedro.png"
+        userCommentImgUrl: "https://github.com/acato21.png"
       },
     ]
   },
