@@ -10,3 +10,11 @@
 .empty {
     color: var(--gray-500);
 }
+@media (max-width:40em) {
+    :root {
+        font-size: 62%;
+    }
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}
